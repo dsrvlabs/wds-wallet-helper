@@ -1,0 +1,16 @@
+{
+  "name": "wds-wallet-helper",
+  "version": "0.0.1",
+  "repository": "https://github.com/dsrvlabs/wds-wallet-helper.git",
+  "author": "daoauth <57783762+daoauth@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ],
+    "nohoist": [
+      "**/**"
+    ]
+  }
+}

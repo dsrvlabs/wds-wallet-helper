@@ -1,0 +1,17 @@
+{
+  "name": "near-account-helper",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build:testnet": "graph codegen && graph build --network near-testnet --network-file ./networks.json",
+    "build:mainnet": "graph codegen && graph build --network near-mainnet --network-file ./networks.json",
+    "deploy:testnet": "graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-testnet",
+    "deploy:mainnet": "graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-mainnet",
+    "deploy:all": "yarn deploy:testnet && yarn deploy:mainnet",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.34.0",
+    "@graphprotocol/graph-ts": "^0.28.0"
+  }
+}

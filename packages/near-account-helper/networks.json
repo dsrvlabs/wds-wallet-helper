@@ -1,0 +1,16 @@
+{
+  "near-testnet": {
+    "WELLDONE Wallet Near Account Helper": {
+      "accounts": {
+        "suffixes" : ["testnet"]
+      }
+    }
+  },
+  "near-mainnet": {
+    "WELLDONE Wallet Near Account Helper": {
+      "accounts": {
+        "suffixes" : ["near"]
+      }
+    }
+  }
+}

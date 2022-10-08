@@ -1,0 +1,26 @@
+type Account @entity {
+  id: ID!
+  accountId: String!
+  kind: String!
+  beneficiaryId: String
+}
+
+type AccessKey @entity {
+  id: ID!
+  accountId: String!
+  publickKey: String!
+  kind: String!
+  functionCall: FunctionCall
+}
+
+type FunctionCall @entity {
+  id: ID!
+  allowance: BigInt
+  methodNames: [String!]
+  receiverId: String
+}
+
+type Deploy @entity {
+  id: ID!
+  codeHash: String!
+}

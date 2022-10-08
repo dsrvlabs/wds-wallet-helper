@@ -1,0 +1,23 @@
+specVersion: 0.0.4
+description: WELLDONE Wallet Near Account Helper
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: near
+    name: WELLDONE Wallet Near Account Helper
+    network: near-mainnet
+    source:
+      accounts:
+        suffixes:
+          - near
+    mapping:
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Account
+        - AccessKey
+        - Deploy
+        - FunctionCall
+      receiptHandlers:
+        - handler: handleReceipt
+      file: ./src/mapping.ts
