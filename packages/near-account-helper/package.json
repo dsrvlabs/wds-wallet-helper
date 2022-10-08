@@ -5,8 +5,8 @@
   "scripts": {
     "build:testnet": "graph codegen && graph build --network near-testnet --network-file ./networks.json",
     "build:mainnet": "graph codegen && graph build --network near-mainnet --network-file ./networks.json",
-    "deploy:testnet": "graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-testnet",
-    "deploy:mainnet": "graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-mainnet",
+    "deploy:testnet": "yarn build:testnet && graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-testnet",
+    "deploy:mainnet": "yarn build:mainnet && graph deploy --node https://api.thegraph.com/deploy/ welldonestudio/near-account-helper-mainnet",
     "deploy:all": "yarn deploy:testnet && yarn deploy:mainnet",
     "test": "graph test"
   },
