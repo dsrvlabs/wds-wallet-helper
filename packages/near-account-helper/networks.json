@@ -3,14 +3,16 @@
     "WELLDONE Wallet Near Account Helper": {
       "accounts": {
         "suffixes" : ["testnet"]
-      }
+      },
+      "startBlock": 0
     }
   },
   "near-mainnet": {
     "WELLDONE Wallet Near Account Helper": {
       "accounts": {
         "suffixes" : ["near"]
-      }
+      },
+      "startBlock": 0
     }
   }
 }
